@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #222;
+}
+
+a {
+  color: #1a56db;
+}
+
+.muted {
+  color: #666;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.navbar nav a {
+  margin-left: 16px;
+  color: #666;
+  text-decoration: none;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #000;
+}
+
+.navbar nav a.active {
+  border-bottom: 2px solid #000;
+}
+
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+.page section {
+  margin-bottom: 36px;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 0 0 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ddd;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+  border: 3px solid #008080;
+  transition: transform 0.2s ease;
+}
+
+.photo:hover {
+  transform: scale(1.08);
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills li {
+  border: 1px solid #ccc;
+  padding: 2px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.skills li:hover {
+  transform: scale(1.09);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.project {
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.2s ease;
+}
+
+.project:hover {
+  background: #f9f9f9;
+}
+
+.project h3 {
+  margin: 0 0 4px;
+}
+
+.project p {
+  margin: 0 0 4px;
+}
+
+.contact {
+  list-style: none;
+  padding: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
